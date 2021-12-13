@@ -1,9 +1,9 @@
-import javax.swing.plaf.synth.SynthScrollBarUI;
 import java.util.Scanner;
 public class DungeonDriver
 {
     public void main (String [] args)
     {
+        int score = Monster.encountersBeaten;
         Scanner gameChecker = new Scanner(System.in);
         System.out.println("Welcome to Hermina Gust's Quest for Perfectly Toasted Toast \n input any button to continue");
         String userInput = gameChecker.nextLine();
@@ -14,8 +14,14 @@ public class DungeonDriver
         System.out.println("2");
         System.out.println("1");
         System.out.println("");
+//give summary of game
+//say the first description
+//say you encountered a monster,
+    }
+    public void Dungeon()
+    {
 
     }
-    public void Dungeon
+
 }
-// TODO: 12/10/2021
+// TODO: 12/13/2021 make the game a monster battle simulator that ends when the monster, Perfectly Toasted Toast.
