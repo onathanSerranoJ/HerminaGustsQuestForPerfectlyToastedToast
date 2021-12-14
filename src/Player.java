@@ -1,33 +1,48 @@
 public class Player implements stats
 {
     private int health;
-    private final int ACTIONS_PER_TURN = 1;
+    private int attack;
     private boolean isDead;
-    private static int timesHealthLost;
 
 
-    public Player(int health, boolean isDead)
+    public Player(int health, int attack, boolean isDead)
     {
         this.health = health;
+        this.attack = attack;
         this.isDead = isDead;
-
     }
-    public void attack()
+
+    public void changeHealth(int damageHeal)
     {
-
+        health += damageHeal;
     }
-    public void
+    public int getHealth()
+    {
+        return health;
+    }
+    public int getAttack()
+    {
+        return attack;
+    }
+    public boolean getIsDead()
+    {
+        return isDead;
+    }
+
     public boolean checkIfDead(int health)
     {
-        if (health <= 0) {
+        if(health <= 0)
+        {
             isDead = true;
-        } else {
+        }
+        else
+        {
             isDead = false;
         }
         return isDead;
     }
-    public String giveStats()
+    public String giveStats()// a toString method
     {
-        System.out.println();
+        return "Player health: " + health +"\nPlayer attack: " + attack + "\nis player dead: " + isDead;
     }
 }
