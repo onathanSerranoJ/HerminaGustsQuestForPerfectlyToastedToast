@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-public class Main//change to dungeonDriver
+public class DungeonDriver
 {
     public static void main (String [] args)
     {
